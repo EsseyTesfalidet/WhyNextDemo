@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 20% 10%, #dbeafe 0%, #f8fafc 45%, #e2e8f0 100%);
+  color: #0f172a;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  padding-bottom: 72px;
+}
+
+html.projector body {
+  font-size: 20px;
+  line-height: 1.55;
+  letter-spacing: 0.005em;
+}
+
+html.projector main {
+  max-width: 120rem;
+}
+
+html.projector h1 {
+  font-size: clamp(2.5rem, 4vw, 4rem) !important;
+  line-height: 1.1;
+}
+
+html.projector h2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem) !important;
+  line-height: 1.2;
+}
+
+html.projector h3 {
+  font-size: clamp(1.35rem, 2vw, 2rem) !important;
+}
+
+html.projector .text-xs {
+  font-size: 1rem !important;
+}
+
+html.projector .text-sm {
+  font-size: 1.15rem !important;
+}
+
+html.projector .text-base {
+  font-size: 1.25rem !important;
+}
+
+html.projector button,
+html.projector a {
+  font-size: 1.1rem;
+}
+
+html.projector button {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+html.projector .shadow-sm,
+html.projector .shadow-lg {
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.2) !important;
+}
+
+html.projector [class*='bg-white'] {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+html.projector code {
+  font-size: 1rem;
+}
+
+html.projector .font-mono {
+  font-size: 1rem;
+}
+
+html.projector .script-ohio-reveal {
+  opacity: 1 !important;
+}
