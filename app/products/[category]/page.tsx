@@ -82,7 +82,7 @@ export default function CategoryPage({
     params.category.charAt(0).toUpperCase() + params.category.slice(1);
 
   return (
-    <section className="rounded-2xl border border-slate-300 bg-white p-6 shadow-sm">
+    <section className="mx-auto w-full max-w-4xl rounded-2xl border border-slate-300 bg-white p-6 shadow-sm">
       <div className="mb-6">
         <Link href="/products" className="text-blue-700 hover:underline">
           ← Back to Products
@@ -112,19 +112,6 @@ export default function CategoryPage({
             </p>
           </Link>
         ))}
-      </div>
-
-      <div className="mt-6 rounded-lg bg-blue-50 p-4 text-sm">
-        <p className="font-semibold text-blue-900">URL Pattern:</p>
-        <p className="mt-1 font-mono text-blue-800">/products/[category]</p>
-        <p className="mt-3 text-blue-800">
-          In React Router, you'd define this in your route config. Here, the
-          folder structure{" "}
-          <code className="inline bg-blue-100 px-2 py-1">
-            /products/[category]/
-          </code>{" "}
-          automatically makes this route dynamic and type-safe.
-        </p>
       </div>
     </section>
   );

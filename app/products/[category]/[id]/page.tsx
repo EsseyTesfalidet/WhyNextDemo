@@ -136,7 +136,7 @@ export default function ProductDetailPage({
   }
 
   return (
-    <section className="rounded-2xl border border-slate-300 bg-white p-6 shadow-sm">
+    <section className="mx-auto w-full max-w-4xl rounded-2xl border border-slate-300 bg-white p-6 shadow-sm">
       <div className="mb-6">
         <Link
           href={`/products/${params.category}`}
@@ -171,24 +171,6 @@ export default function ProductDetailPage({
       <button className="mt-6 rounded-lg bg-blue-600 px-6 py-2 font-semibold text-white transition hover:bg-blue-700">
         Add to Cart
       </button>
-
-      <div className="mt-8 space-y-2 rounded-lg bg-green-50 p-4 text-sm">
-        <p className="font-semibold text-green-900">
-          Deeply Nested Dynamic Routes:
-        </p>
-        <p className="text-green-800">
-          This page uses{" "}
-          <code className="inline bg-green-100 px-2 py-1">
-            /products/[category]/[id]/page.tsx
-          </code>
-        </p>
-        <p className="mt-2 text-green-800">
-          In React Router, handling multiple nested params requires careful
-          setup and often leads to prop-drilling. Next.js gives you the params
-          object automatically with full type checking. Scale to any depth—your
-          folder structure is your router!
-        </p>
-      </div>
     </section>
   );
 }

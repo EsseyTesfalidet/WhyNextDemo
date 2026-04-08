@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import "@/app/globals.css";
+import { ContentLayout } from "@/components/content-layout";
 import { ModeProvider } from "@/components/mode-provider";
-import { ModeToggle } from "@/components/mode-toggle";
+import { HomeOnlyModeToggle } from "@/components/home-only-mode-toggle";
 import { ProjectorToggle } from "@/components/projector-toggle";
 
 export const metadata: Metadata = {
@@ -63,10 +64,11 @@ export default function RootLayout({
               </nav>
 
               <div className="mt-4">
-                <ModeToggle />
+                <HomeOnlyModeToggle />
               </div>
             </header>
-            {children}
+
+            <ContentLayout>{children}</ContentLayout>
           </main>
         </ModeProvider>
       </body>

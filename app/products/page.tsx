@@ -8,7 +8,7 @@ const CATEGORIES = [
 
 export default function ProductsPage() {
   return (
-    <section className="rounded-2xl border border-slate-300 bg-white p-6 shadow-sm">
+    <section className="w-full rounded-2xl border border-slate-300 bg-white p-6 shadow-sm xl:min-h-[42rem]">
       <div className="mb-6">
         <p className="text-xs font-semibold uppercase tracking-widest text-slate-500">
           Nested Dynamic Routes
